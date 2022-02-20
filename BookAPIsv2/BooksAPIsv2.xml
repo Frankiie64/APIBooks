@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookAPIsv2</name>
+    </assembly>
+    <members>
+        <member name="M:BooksApi.Controllers.BooksControllers.GetBooks">
+            <summary>
+            No recibe ningun tipo de parametros y devuelve todas las libros que existan en la base de datos.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.BooksControllers.GetBook(System.Int32)">
+            <summary>
+            Recibe un entero, y devuelve una libro en especifico.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.BooksControllers.GetBooksInCat(System.Int32)">
+            <summary>
+            Recibe un entero, y devuelve una libro en especifico.
+            </summary>
+            <param name="CatId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.BooksControllers.FindBooks(System.String)">
+            <summary>
+            devuelve todos lo resultados de la palabra clave puesta en el buscador.
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.BooksControllers.CreateBook(BooksAPIsv2.Models.Dtos.BookDtos)">
+            <summary>
+            Necesita de un Json para proceder su operacion, esta crea una libro como su nombre lo indica.
+            </summary>
+            <param name="BookDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.BooksControllers.UpdateBook(System.Int32,BooksAPIsv2.Models.Dtos.BookDtos)">
+            <summary>
+            Recibe por parametro un entero para identificar la libro que va actualizar.
+            </summary>
+            <param name="Id"></param>
+            <param name="BookDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.BooksControllers.DeleteBook(System.Int32)">
+            <summary>
+            Sirve para eliminar libro existente y recibe por parametro un entero.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.CategoriesControllers.GetCategories">
+            <summary>
+            No recibe ningun tipo de parametros y devuelve todas las categorias que existan en la base de datos.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.CategoriesControllers.GetCategory(System.Int32)">
+            <summary>
+            Recibe un entero, y devuelve una categoria en especifico.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.CategoriesControllers.CreateCategory(BooksAPIsv2.Models.Dtos.DtoCategory)">
+            <summary>
+            Necesita de un Json para proceder su operacion, esta crea una categoria como su nombre lo indica.
+            </summary>
+            <param name="CategoryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.CategoriesControllers.UpdateCategory(System.Int32,BooksAPIsv2.Models.Dtos.DtoCategory)">
+            <summary>
+            Recibe por parametro un entero para identificar la categoria que va actualizar.
+            </summary>
+            <param name="Id"></param>
+            <param name="CategoryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksApi.Controllers.CategoriesControllers.DeleteCategory(System.Int32)">
+            <summary>
+            Sirve para eliminar categoria existente y recibe por parametro un entero.
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
